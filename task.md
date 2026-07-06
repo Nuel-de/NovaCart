@@ -1,5 +1,6 @@
 
-
+# Brand color
+# Fonts
 
 
 # Emmanuel
