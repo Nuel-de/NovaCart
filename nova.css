@@ -1,0 +1,166 @@
+@import url(https://googleapis.com);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'inter';
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2rem 0.8rem;
+
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    width: 60px;
+    height: 40px;
+    
+}
+.logo i{
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding-top: 0.5rem;
+
+
+}
+.logo span {
+    background: #0FA0FC;
+    background-clip: text;
+    color: transparent;
+}
+.hidden{
+    display: none;    
+    
+}
+
+#handburger-menu{
+    background-color: #686368;
+    margin-left: 50%;
+    padding: 1.5rem;
+    position: fixed;
+
+}
+#handburger-menu ul{
+    list-style-type: none;
+}
+
+#handburger-menu li{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#handburger-menu  a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+
+}
+
+
+
+.hero{
+    background-color: black;
+    color: #F4F8FF;
+    font-family: 'inter';
+    display: flex;
+    flex-direction: column;
+}
+
+.iphone{
+    padding-top: 3rem;
+    padding-left: 1.3rem;
+    display: flex;
+}
+.iphone p {
+    padding-top: 1rem;
+    padding-left: 0.7rem;
+}
+.hero-content h1{
+    padding-top: 1rem;
+    padding-left: 1.3rem;
+    padding-bottom: 0.8rem;
+    color: #FAFAFA;
+}
+.hero-content a {
+    color: #FAFAFA;
+    padding-left: 1.3rem;
+    
+}
+#image{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+.product-category h4{
+    color: #DB4444;
+    padding: 1rem 1rem;
+}
+
+.product-category h1{
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+    font-family: 'inter';
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.7rem;
+     transition: background-color 3s ease ;
+    
+
+}
+.product span{
+    padding-bottom: 1rem;
+    
+}
+.product{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+   
+}
+.products :hover{
+    background-color: #DB4444;
+    border: none;
+    color: #F4F8FF;
+}
+.product img{
+    width: 50px;
+    margin: 2rem;
+}
+.BSP h4{
+    color: #DB4444;
+    padding: 1rem 1rem;
+}
+
+.BSP h1{
+    padding-left: 1rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.cards{
+    border: 1px solid black;
+}
+
+@media(min-width: 768px){
+    #handburger-icon{
+        display: none;
+    }
+
+    
+}
