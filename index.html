@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div id="hamburger-icon"><i class="fa-solid fa-bars"></i></div>
+        <div id="hamburger-menu" class="hamburger-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-center">
+            <img src="cart_logo-removebg-preview.png" alt="">
+            <div class="brand-name">
+               <h1>Nova <span>Cart</span></h1>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            
+            <div id="nav-cart">
+                🛒 Cart: <span id="cart-count">0</span>
+            </div>
+        </div>
+
+    </nav>
+    <!----HERO SECTION-->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Everything You Love, All in One Cart</h1>
+            <p>From everyday essentials to latest trends, <span>Nova Cart</span>brings you a seamless shopping experience with unbeatable value</p>
+            <a href="#about us">About Us ></a>
+        </div>
+        <img src="photo_2026-07-15_14-28-09-removebg-preview.png" alt="">
+    </section>
+
+    
+
+    <!--------SEARCH BAR----->
+
+    <div class="wrapper">
+    <div class="search-bar">
+        <input type="text" placeholder="Search" id="search">
+        <button type="submit" id="search-btn">Search</button>
+    </div>
+    </div>
+
+    <!------CATEGORY BUTTONS------>
+
+    <section class="filters">
+        <buttn class="filter-btn" data-category="all">All</buttn>
+        <buttn class="filter-btn" data-category="electronics">Electronics</buttn>
+        <buttn class="filter-btn" data-category="apparel & fashion">Apparel & Fashion</buttn>
+        <buttn class="filter-btn" data-category="home &  living">Home & Living</buttn>
+        <buttn class="filter-btn" data-category="health & wellness">Health & Wellness</buttn>
+    </section>
+   
+    <!-------PRODUCT CARDS-->
+
+    <section id="product-card" class="product-card">
+
+        <!------PRODUCT CARD WILL BE CREATED ON JAVASCRIPT-->
+    </section>
+
+    <!------mODAL OVERLAY----->
+
+    <section id="modal-overlay">
+        <div>
+            <!----MODAL CLOSE BUTTON-->
+            <button id="modal-close">X</button>
+            <!-----IMAGES DISPLAYED ON THE LEFT SIDE OF THE MODAL-->
+            <div class="modal-left">
+                <div><img src="" alt="" class="modal-img"></div>
+                <div><img src="" alt="" class="modal-img"></div>
+                <div><img src="" alt="" class="modal-img"></div>
+                <div><img src="" alt="" class="modal-img"></div>
+            </div>
+
+            <!------PRODUCT DETAILS ON THE RIGHT SIDE OF THE MODAL------>
+            <div>
+                <div id="modal-category"></div>
+                <h1 id="modal-name"></h1>
+                <div id="modal-review&rating">
+                    <div id="modal-stars"></div>
+                    <p id="modal-rating"></p>
+                </div>
+                <p id="modal-price"></p>
+                <p id="modal-description"></p>
+
+                <div class="modal-stock">
+                    <span id="modal-stock"></span>
+                </div>
+
+                <div class="modal-actions">
+                    <div id="quantity-picker">
+                        <button id="quantity-minus">-</button>
+                        <span id="quantity-number">1</span>
+                        <button id="quantity-plus">+</button>
+                    </div>
+                    <button id="modal-add-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <div id="toast">✅ Added to cart!</div>
+
+
+</body>
+<script src="script.js"></script>
+</html>

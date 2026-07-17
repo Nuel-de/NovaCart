@@ -1,0 +1,229 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.707);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    letter-spacing: -0.05;
+    background-color: #ADDFF1;
+    
+}
+.nav-right{
+    background-color: #003152;
+    padding: 1rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.676);
+}
+
+.nav-center img{
+    width: 60px;
+    height: 40px;
+}
+.nav-center {
+    display: flex;
+    flex-direction: row;
+    
+}
+.nav-center span {
+    background: #0383F3;
+    background-clip: text;
+    color: transparent;
+}
+.brand-name h1{
+    font-size: 1.8rem;
+}
+#hamburger-icon{
+    font-size: 22px;
+}
+.hamburger-menu{
+    background-color: #041521;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: transform 0.25s ease, opacity 0.3s ease, visibility 0.3s ease;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.3);
+    
+    
+}
+.hamburger-menu.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.hamburger-menu ul{
+    list-style: none;
+    padding: 20px;
+
+    
+
+}
+.hamburger-menu li{
+    padding: 20px 20px;
+    border-bottom: 1px solid rgb(92, 83, 83);
+    
+}
+
+.hamburger-menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    
+    
+}
+
+.hero{
+    background-color: #003152;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero h1{
+    font-size: 2rem;
+    padding: 1rem;
+    padding-top: 3rem;
+}
+
+.hero p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.635);
+}
+
+.hero a{
+    margin-left: 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #041521;
+}
+
+.hero img{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+.search-bar{
+    display: flex;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: fit-content;
+    overflow: hidden;
+    
+    
+    
+    
+    
+}
+
+#search{
+    flex: 1;
+    border: none;
+    padding: 0.6rem 1rem;
+    font-weight: 600
+    
+}
+#search-btn{
+    border: none;
+    padding: 0.5rem 0.8rem;
+    color: white;
+    background-color: #003152;
+}
+.filters {
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.filter-btn{
+    border: 1px  black;
+    background-color: white;
+    border-radius: 20px;
+    padding: 0.8rem 1.5rem;
+    font-weight: 700;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    
+}
+
+.filter-btn:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.02);
+}
+
+.filter-btn:active{
+    background-color: black;
+    color: white;
+
+}
+
+@media(min-width: 768px){
+    .hero{
+        flex-direction: row;
+    }
+    #hamburger-icon{
+        display: none;
+    }
+    #hamburger-menu{
+        opacity: 1;
+        visibility: visible;
+        display: block;
+        background-color: transparent;
+        position: static;
+        width: auto;
+        transform: none;
+        align-items: center;
+        box-shadow: none;
+        
+    }
+    #hamburger-menu ul{
+        display: flex;
+        padding: 0px;
+
+    }
+    .hamburger-menu li{
+        border-bottom: none;
+        padding-left: 0.5rem;
+    }
+    .hamburger-menu a{
+        color: #0B2C5A;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    .navbar{
+        padding-right: 2rem;
+    }
+    .nav-center{
+        padding-right: 6rem;
+    }
+}
