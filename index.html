@@ -56,18 +56,25 @@
     <!------CATEGORY BUTTONS------>
 
     <section class="filters">
-        <buttn class="filter-btn" data-category="all">All</buttn>
-        <buttn class="filter-btn" data-category="electronics">Electronics</buttn>
-        <buttn class="filter-btn" data-category="apparel & fashion">Apparel & Fashion</buttn>
-        <buttn class="filter-btn" data-category="home &  living">Home & Living</buttn>
-        <buttn class="filter-btn" data-category="health & wellness">Health & Wellness</buttn>
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="electronics">Electronics</button>
+        <button class="filter-btn" data-category="apparel & fashion">Apparel & Fashion</button>
+        <button class="filter-btn" data-category="home &  living">Home & Living</button>
+        <button class="filter-btn" data-category="health & wellness">Health & Wellness</button>
+        <button class="filter-btn" data-category="health & wellness">Beauty & Personal Care</button>
+        
+        
     </section>
    
     <!-------PRODUCT CARDS-->
 
-    <section id="product-card" class="product-card">
+    <section  id="product-section" class="product-section">
+        
 
-        <!------PRODUCT CARD WILL BE CREATED ON JAVASCRIPT-->
+            <!------PRODUCT CARD WILL BE CREATED ON JAVASCRIPT-->
+        
+
+        
     </section>
 
     <!------mODAL OVERLAY----->
@@ -78,17 +85,19 @@
             <button id="modal-close">X</button>
             <!-----IMAGES DISPLAYED ON THE LEFT SIDE OF THE MODAL-->
             <div class="modal-left">
-                <div><img src="" alt="" class="modal-img"></div>
-                <div><img src="" alt="" class="modal-img"></div>
-                <div><img src="" alt="" class="modal-img"></div>
-                <div><img src="" alt="" class="modal-img"></div>
+                <img src="" alt="" id="image-one">
+                <div class="bottom-images">
+                    <img src="" alt="" id="image-two">
+                    <img src="" alt="" id="image-three">
+                    <img src="" alt="" id="image-four">
+                </div>
             </div>
 
             <!------PRODUCT DETAILS ON THE RIGHT SIDE OF THE MODAL------>
-            <div>
+            <div class="modal-right">
                 <div id="modal-category"></div>
                 <h1 id="modal-name"></h1>
-                <div id="modal-review&rating">
+                <div class="modal-rating">
                     <div id="modal-stars"></div>
                     <p id="modal-rating"></p>
                 </div>
